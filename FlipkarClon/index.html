@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipcart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css">
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="nav-logo">
+          <img
+            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+            alt=" "
+          />
+        </div>
+        <div class="nav-search">
+          <div class="nav-search-logo">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <input
+            class="input"
+            type="text"x
+            placeholder="Search for Products, Brands and More"
+          />
+        </div>
+
+        <div class="nav-login showborder" onmouseover="showloginlist()" onmouseout="hideloginlist()">
+          <i class="fa-regular fa-circle-user"></i>
+          <a href="#">Login</a>
+          <select class="nav-login-select"
+            style="outline: none; border: none ;"
+            name="nav-login-arrow" disabled
+          ></select>
+        </div>
+
+        <div class="nav-trolly-logo logos showborder">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p class="nav-p">Cart</p>
+        </div>
+
+        <div class="nav-shop-logo logos showborder">
+          <i class="fa-solid fa-store"></i>
+          <p class="nav-p">Become a Seller</p>
+        </div>
+
+        <div class="nav-menu-logo logos showborder">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+
+        <div
+          class="hidden-menu-bar"
+          onclick="showHiddenList()"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+      </div>
+    </header>
+    <!-- hidden login bar -->
+    <div class="hidden-login" onmouseover="showloginlist()" onmouseout="hideloginlist()">
+      <div class="hidden-login-heading">
+        <p>New Customer ? </p>
+        <div class="hidden-signin-button"><a href="#" style="text-decoration: none; color: rgb(24, 89, 230); font-weight: bold; margin-right: 0.3rem;">Sign Up</a></div>
+      </div>
+      <hr>
+      <ul class="hidden-login-ul" style="list-style-type: none;">
+        <li class="hidden-login-li">My profile</li>
+        <li class="hidden-login-li">Flipkart Plus Zone</li>
+        <li class="hidden-login-li">Orders</li>
+        <li class="hidden-login-li">Whislist</li>
+        <li class="hidden-login-li">Rewards</li>
+        <li class="hidden-login-li">Gift Cards</li>
+      </ul>
+    </div>
+    <!-- end of hidden login bar -->
+
+    <!-- HIDDEN LIST -->
+
+    <div class="hidden-menu-content">
+      <ul class="hidden-nav-ul" style="list-style-type: none;">
+        <li class="hidden-nav-list">
+          <i class="fa-regular fa-circle-user"></i> <a href="#"> Login</a>
+        </li>
+        <li class="hidden-nav-list">
+          <i class="fa-solid fa-cart-shopping"></i> <a href="#">Cart</a>
+        </li>
+        <li class="hidden-nav-list">
+          <i class="fa-solid fa-store"></i> <a href="#">Become a Seller</a>
+        </li>
+        <li class="hidden-nav-list"><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- End of HIDDEN LIST  -->
+
+    <div class="panal">
+      <div class="box">
+        <img
+          src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/38a459d6d1fc930a.png?q=100"
+          alt="image"
+        />
+        <p class="box-p">Mobiles & Tablets</p>
+      </div>
+      <div class="box">
+        <img
+          src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/629b0a6f61037ae6.png?q=100"
+          alt="image"
+        />
+        <p class="box-p">TVs & Electronics</p>
+      </div>
+      <div class="box">
+        <img
+          src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/f2802fac96dffea9.png?q=100"
+          alt="image"
+        />
+        <p class="box-p">Appliances</p>
+      </div>
+      <div class="box">
+        <img
+          src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/74f0eb6cc10e2743.png?q=100"
+          alt="image"
+        />
+        <p class="box-p">Fashion</p>
+      </div>
+      <div class="box">
+        <img
+          src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/f925cfe5ecdf6acf.png?q=100"
+          alt="image"
+        />
+        <p class="box-p">Beauty</p>
+      </div>
+      <div class="box">
+        <img
+          src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/38d4fbb64c70a3ff.png?q=100"
+          alt="image"
+        />
+        <p class="box-p">Home & Kitchen</p>
+      </div>
+      <div class="box">
+        <img
+          src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/fef14e08ec83a6d7.png?q=100"
+          alt="image"
+        />
+        <p class="box-p">Furniture</p>
+      </div>
+      <div class="box">
+        <img
+          src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/83de409bda2f3834.png?q=100"
+          alt="image"
+        />
+        <p class="box-p">Flights</p>
+      </div>
+      <div class="box">
+        <img
+          src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/711174cfe1d2fa75.png?q=100"
+          alt="image"
+        />
+        <p class="box-p">Grocery</p>
+      </div>
+    </div>
+    <div class="image-panal">
+      <img
+        src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/98c5bff5ba33a77f.jpeg?q=20"
+        alt=""
+      />
+    </div>
+    <div class="panal2">
+      <div class="box-panal">
+        <div class="box-panal-heading"><p>Best Mobile</p></div>
+        <div class="panal2-boxes">
+          <div class="panal2-box">
+            <div class="panal2-box-img">
+              <img
+                src="https://rukminim2.flixcart.com/image/416/416/jwfa5jk0/pendrive/pendrive/z/f/p/sandisk-sdcz50-128g-i35-original-imafh3xkthkjzhkv.jpeg?q=70&crop=false"
+                alt=""
+              />
+            </div>
+            <p class="hp1">Pen Drive</p>
+            <p class="hp2">incl of offers</p>
+          </div>
+          <div class="panal2-box">
+            <div class="panal2-box-img">
+              <img
+                src="https://rukminim2.flixcart.com/image/312/312/ks0onm80/monitor/w/6/6/ha270-um-hw0si-a01-acer-original-imag5zjnk4yad4uz.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <p class="hp1">Moniters</p>
+            <p class="hp2">From ₹6999</p>
+          </div>
+          <div class="panal2-box">
+            <div class="panal2-box-img">
+              <img
+                src="https://rukminim2.flixcart.com/image/832/832/kjvrdzk0/watch/f/e/z/ls2917-limestone-original-imafzcv7hhkztdmf.jpeg?q=70&crop=false"
+                alt=""
+              />
+            </div>
+            <p class="hp1">Smart Watches</p>
+            <p class="hp2">Min. 20% off</p>
+          </div>
+          <div class="panal2-box third-lastbox">
+            <div class="panal2-box-img">
+              <img
+                src="https://rukminim2.flixcart.com/image/416/416/l58iaa80/electric-cycle/i/y/f/-original-imagfykthgudy4qz.jpeg?q=70&crop=false"
+                alt=""
+              />
+            </div>
+            <p class="hp1">Electric Cycle</p>
+            <p class="hp2">Up to 40% off</p>
+          </div>
+          <div class="panal2-box sec-lastbox">
+            <div class="panal2-box-img">
+              <img
+                src="https://rukminim2.flixcart.com/image/416/416/xif0q/snack-savourie/d/r/v/-original-imaghfn8j2vrwfcy.jpeg?q=70&crop=false"
+                alt=""
+              />
+            </div>
+            <p class="hp1">Dry Fruits</p>
+            <p class="hp2">Up to 75% off</p>
+          </div>
+          <div class="panal2-box extrahiddenbox lastbox">
+            <div class="panal2-box-img">
+              <img
+                src="https://rukminim2.flixcart.com/image/416/416/xif0q/snack-savourie/d/r/v/-original-imaghfn8j2vrwfcy.jpeg?q=70&crop=false"
+                alt=""
+              />
+            </div>
+            <p class="hp1">Dry Fruits</p>
+            <p class="hp2">Up to 75% off</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="left-panal">
+        <img
+          src="https://rukminim2.flixcart.com/fk-p-flap/530/810/image/9327648142697b19.jpeg?q=20"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- second Panal same vala  -->
+
+    <div class="panal2" style="width: 98%">
+      <div class="box-panal" style="width: 100%">
+        <div class="box-panal-heading"><p>Best Mobile</p></div>
+        <div
+          class="panal2-boxes"
+          style="width: 100%; justify-content: space-evenly"
+        >
+          <div class="panal2-box panal22-box">
+            <div class="panal2-box-img">
+              <img
+                src="https://rukminim2.flixcart.com/image/416/416/jwfa5jk0/pendrive/pendrive/z/f/p/sandisk-sdcz50-128g-i35-original-imafh3xkthkjzhkv.jpeg?q=70&crop=false"
+                alt=""
+              />
+            </div>
+            <p class="hp1">Pen Drive</p>
+            <p class="hp2">incl of offers</p>
+          </div>
+          <div class="panal2-box panal22-box" >
+            <div class="panal2-box-img">
+              <img
+                src="https://rukminim2.flixcart.com/image/312/312/ks0onm80/monitor/w/6/6/ha270-um-hw0si-a01-acer-original-imag5zjnk4yad4uz.jpeg?q=70"
+                alt=""
+              />
+            </div>
+            <p class="hp1">Moniters</p>
+            <p class="hp2">From ₹6999</p>
+          </div>
+          <div class="panal2-box panal22-box">
+            <div class="panal2-box-img">
+              <img
+                src="https://rukminim2.flixcart.com/image/832/832/kjvrdzk0/watch/f/e/z/ls2917-limestone-original-imafzcv7hhkztdmf.jpeg?q=70&crop=false"
+                alt=""
+              />
+            </div>
+            <p class="hp1">Smart Watches</p>
+            <p class="hp2">Min. 20% off</p>
+          </div>
+          <div class="panal2-box third-lastbox panal22-box">
+            <div class="panal2-box-img">
+              <img
+                src="https://rukminim2.flixcart.com/image/416/416/l58iaa80/electric-cycle/i/y/f/-original-imagfykthgudy4qz.jpeg?q=70&crop=false"
+                alt=""
+              />
+            </div>
+            <p class="hp1">Electric Cycle</p>
+            <p class="hp2">Up to 40% off</p>
+          </div>
+          <div class="panal2-box sec-lastbox panal22-box">
+            <div class="panal2-box-img">
+              <img
+                src="https://rukminim2.flixcart.com/image/416/416/xif0q/snack-savourie/d/r/v/-original-imaghfn8j2vrwfcy.jpeg?q=70&crop=false"
+                alt=""
+              />
+            </div>
+            <p class="hp1">Dry Fruits</p>
+            <p class="hp2">Up to 75% off</p>
+          </div>
+          <div class="panal2-box lastbox panal22-box" >
+            <div class="panal2-box-img">
+              <img
+                src="https://rukminim2.flixcart.com/image/416/416/xif0q/snack-savourie/d/r/v/-original-imaghfn8j2vrwfcy.jpeg?q=70&crop=false"
+                alt=""
+              />
+            </div>
+            <p class="hp1">Dry Fruits</p>
+            <p class="hp2">Up to 75% off</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="mainfooter">
+        <div class="footer-content">
+          <p class="footer-heading">ABOUT</p>
+          <ul class="footer-ul">
+            <li class="footer-li"><a href="#">Contact us</a></li>
+            <li class="footer-li"><a href="#">About us </a></li>
+            <li class="footer-li"><a href="#">Careers</a></li>
+            <li class="footer-li"><a href="#">Flipkart Stories</a></li>
+            <li class="footer-li"><a href="#">Press</a></li>
+            <li class="footer-li"><a href="#">Flipkart wholesale</a></li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <p class="footer-heading">ABOUT</p>
+          <ul class="footer-ul">
+            <li class="footer-li"><a href="#">Contact us</a></li>
+            <li class="footer-li"><a href="#">About us </a></li>
+            <li class="footer-li"><a href="#">Careers</a></li>
+            <li class="footer-li"><a href="#">Flipkart Stories</a></li>
+            <li class="footer-li"><a href="#">Press</a></li>
+            <li class="footer-li"><a href="#">Flipkart wholesale</a></li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <p class="footer-heading">ABOUT</p>
+          <ul class="footer-ul">
+            <li class="footer-li"><a href="#">Contact us</a></li>
+            <li class="footer-li"><a href="#">About us </a></li>
+            <li class="footer-li"><a href="#">Careers</a></li>
+            <li class="footer-li"><a href="#">Flipkart Stories</a></li>
+            <li class="footer-li"><a href="#">Press</a></li>
+            <li class="footer-li"><a href="#">Flipkart wholesale</a></li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <p class="footer-heading">ABOUT</p>
+          <ul class="footer-ul">
+            <li class="footer-li"><a href="#">Contact us</a></li>
+            <li class="footer-li"><a href="#">About us </a></li>
+            <li class="footer-li"><a href="#">Careers</a></li>
+            <li class="footer-li"><a href="#">Flipkart Stories</a></li>
+            <li class="footer-li"><a href="#">Press</a></li>
+            <li class="footer-li"><a href="#">Flipkart wholesale</a></li>
+          </ul>
+        </div>
+
+        <div
+          style="width: 1px; background-color: rgb(178, 168, 168); height: 80%"
+        ></div>
+        <div class="footer-content">
+          <p class="footer-heading">ABOUT</p>
+          <ul class="footer-ul">
+            <li class="footer-li"><a href="#">Contact us</a></li>
+            <li class="footer-li"><a href="#">About us </a></li>
+            <li class="footer-li"><a href="#">Careers</a></li>
+            <li class="footer-li"><a href="#">Flipkart Stories</a></li>
+            <li class="footer-li"><a href="#">Press</a></li>
+            <li class="footer-li"><a href="#">Flipkart wholesale</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-content">
+          <p class="footer-heading">ABOUT</p>
+          <ul class="footer-ul">
+            <li class="footer-li"><a href="#">Contact us</a></li>
+            <li class="footer-li"><a href="#">About us </a></li>
+            <li class="footer-li"><a href="#">Careers</a></li>
+            <li class="footer-li"><a href="#">Flipkart Stories</a></li>
+            <li class="footer-li"><a href="#">Press</a></li>
+            <li class="footer-li"><a href="#">Flipkart wholesale</a></li>
+          </ul>
+        </div>
+      </div>
+      <div
+        style="
+          width: 100%;
+          background-color: rgb(178, 168, 168);
+          height: 0.09px;
+        "
+      ></div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <i class="fa-solid fa-store footer-logos"></i>
+          <a href="#">Become a seller</a>
+        </div>
+
+        <div class="footer-bottom-content">
+          <i class="fa-regular fa-star footer-logos"></i
+          ><a href="#">Adverties</a>
+        </div>
+        <div class="footer-bottom-content">
+          <i class="fa-solid fa-gift footer-logos"></i
+          ><a href="#">Gift cards</a>
+        </div>
+        <div class="footer-bottom-content">
+          <i class="fa-solid fa-circle-question footer-logos"></i
+          ><a href="#">Help center</a>
+        </div>
+        <div class="footer-bottom-content">
+          <a href="#">2007-2024 Flipkart.com</a>
+        </div>
+        <div class="footer-bottom-content" style="width: 35%">
+          <img
+            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
